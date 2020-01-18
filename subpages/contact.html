@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Do you have a question or problem with your product? Don't hestitate and write to us.">
+    <meta name="robots" content="noindex" />
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../mystyle.css">
+
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+
+    <title>Contact us</title>
+</head>
+<body id="body-content">
+    <header class="top-sub">
+        <div class="top-all top-all-big">
+            <div class="logo-container logo-con-sm">
+                <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+            <nav class="nav-big-size nav-small-size">
+                <div class="nav-btn nav-btn-target">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ol class="nav-content">
+                    <li class="close"><span>&times;</span></li>
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
+                    <li><a href="products.html" class="nav-item">Our Products</a></li>
+                    <li><a href="#" class="nav-item history-item">History</a>           
+                        <ul class="subnav">
+                            <li><a href="history.html" class="nav-item ">of chocolate</a></li>
+                            <li><a href="company-history.html" class="nav-item">of company</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="recipes.html" class="nav-item">Recipes</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h2>Contact with us</h2>
+            </header>
+            <div class="contact-container">
+                <form>
+                    <input type="text" class="contact-name" placeholder="Name" required>
+                    <input type="mail" class="contact-mail" placeholder="E-mail" required>
+                    <textarea class="contact-text"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-instagram"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-twitter"></i></a></span>
+            <p>All Copywrite reserved 2019</p>
+        </div>
+        <div class="scroll-btn">
+            <a href="#body-content"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $( ".nav-btn" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideUp();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".close" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideDown();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".history-item" ).click(function(e) {
+                e.preventDefault();
+                    $(".subnav").not(".subnav").slideDown();
+                    $( ".subnav" ).slideToggle( "slow", function() {
+                });
+             });
+         });
+    </script>
+</body>
+</html>

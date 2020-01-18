@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Milk chocolate is our standard product loved by everyone. We know you will love it!">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../mystyle.css">
+
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+
+    <title>Milk chocolate</title>
+</head>
+<body id="body-content">
+    <header class="top-sub">
+        <div class="top-all top-all-big">
+            <div class="logo-container logo-con-sm">
+                <a href="../index.html"><img src="../img/logo.png" alt="Toblerone logo"></a>
+            </div>
+            <nav class="nav-big-size nav-small-size">
+                <div class="nav-btn nav-btn-target">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ol class="nav-content">
+                    <li class="close"><span>&times;</span></li>
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
+                    <li><a href="products.html" class="nav-item">Our Products</a></li>
+                    <li><a href="#" class="nav-item history-item">History</a>           
+                        <ul class="subnav">
+                            <li><a href="history.html" class="nav-item ">of chocolate</a></li>
+                            <li><a href="company-history.html" class="nav-item">of company</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="recipes.html" class="nav-item">Recipes</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="product-container bc-big">
+                <header class="product-heading">
+                    <h3>Milk chocolate</h3>
+                </header>
+                <div class="product-item">
+                    <div class="product-item-img">
+                        <img src="../img/toblerone.png" alt="Milk-toblerone-chocolate">
+                        <div class="table">
+                            <div class="table-cell cell-heading">Weight</div>
+                            <div class="table-cell cell-content">100g</div>
+                            <div class="table-cell cell-heading">Calories per servings</div>
+                            <div class="table-cell cell-content">180 Cal</div>
+                            <div class="table-cell cell-heading">Carbohydrates</div>
+                            <div class="table-cell cell-content">21g</div>
+                            <div class="table-cell cell-heading">Sugar</div>
+                            <div class="table-cell cell-content">20g</div>
+                            <div class="table-cell cell-heading">Sodium</div>
+                            <div class="table-cell cell-content">20mg</div>
+                            <div class="table-cell cell-heading">Protein</div>
+                            <div class="table-cell cell-content">2g</div>
+                            <div class="table-cell cell-heading">Dietary fibre</div>
+                            <div class="table-cell cell-content">1g</div>
+                            <div class="table-cell cell-heading">Dairy free</div>
+                            <div class="table-cell cell-content">No</div>
+                            <div class="table-cell cell-heading">Vegetarian</div>
+                            <div class="table-cell cell-content">Yes</div>
+                            <div class="table-cell cell-heading">Vegan</div>
+                            <div class="table-cell cell-content">No</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product-text">
+                        <p>Milk chocolate with honey and almond nougat is a classic in the Toblerone portfolio. For over 100 years, it has been produced according to an unchanged recipe from the highest quality products: cocoa beans, Alpine milk, honey, chopped almonds and nougat from Montelimar, which give Toblerone an intense aroma and excellent taste. This delicious chocolate is available in several formats 35 g, 50 g, 100 g and as mini chocolates in a family package of 200 g.</p>
+                    
+                        <div class="other-content">
+                            <h4 class="check-others">Explore other tastes</h4>
+                            <div class="other-stuff">
+                                <a href="crunchy-almonds-toblerone.html"><img src="../img/toblerone-blue.png" alt="toblerone-milk"></a>
+                                <a href="#"><img src="../img/toblerone-dark.png" alt="toblerone-dark"></a>
+                                <a href="#"><img src="../img/toblerone-fruit.png" alt="toblerone-fruit"></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-instagram"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-twitter"></i></a></span>
+            <p>All Copywrite reserved 2019</p>
+        </div>
+        <div class="scroll-btn">
+            <a href="#body-content"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $( ".nav-btn" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideUp();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".close" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideDown();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".history-item" ).click(function(e) {
+                e.preventDefault();
+                    $(".subnav").not(".subnav").slideDown();
+                    $( ".subnav" ).slideToggle( "slow", function() {
+                });
+             });
+         });
+    </script>
+</body>
+</html>

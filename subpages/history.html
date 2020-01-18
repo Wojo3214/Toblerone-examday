@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="History doesn't have to be boring. Back to the past and check our chocolate one.">
+    <meta name="robots" content="noindex" />
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../mystyle.css">
+
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+
+    <title>History of chocolate</title>
+</head>
+<body id="body-content">
+    <header class="top-sub">
+        <div class="top-all top-all-big">
+            <div class="logo-container logo-con-sm">
+                <a href="../index.html"><img src="../img/logo.png" alt="Toblerone logo"></a>
+            </div>
+            <nav class="nav-big-size nav-small-size">
+                <div class="nav-btn nav-btn-target">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ol class="nav-content">
+                    <li class="close"><span>&times;</span></li>
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
+                    <li><a href="products.html" class="nav-item">Our Products</a></li>
+                    <li><a href="#" class="nav-item history-item">History</a>           
+                        <ul class="subnav">
+                            <li><a href="history.html" class="nav-item ">of chocolate</a></li>
+                            <li><a href="company-history.html" class="nav-item">of company</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="recipes.html" class="nav-item">Recipes</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="history">
+                <header>
+                    <h2>History of chocolate</h2>
+                </header>
+                <div class="history-container">
+                    <div class="time_line">
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>Mexico</h3>
+                                <p>History of chocolate starts in Latin America, where cacao trees grown wild probably in what is today southeast Mexico.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-left">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>Spain, 1502</h3>
+                                <p>Somehow cacao beans arrived to Spain around 1502, which began importing chocolate to Europe.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>Europe, 1585</h3>
+                                <p>Chocolate mania spread throughout Europe in 1585. With the high demand for chocolate came chocolate plantations. Europeans started to create other varieties of hot chocolate with cane sugar, cinnamon and other common spices and flavourings.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-left">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>England</h3>
+                                <p>In short amount of time chocolate houses were perfectly known in London, Amsterdam and other European cities.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>US, 1641</h3>
+                                <p>Chocolate arrived then to Florida in 1641 and in 1773 became a main import goods and it could be enjoyed by people of all classes</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-left">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>Netherlands, 1828</h3>
+                                <p>In 1828, Dutch chemist Coenraad Johannes van Houten discovered a way to make a powdered chocolate, what made it easier to mix with water.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>England, 1847</h3>
+                                <p>In 1847, British chocolatier J.S. Fry created the first chocolate bar made of sugar, cocoa butter and chocolate liquor. From now chocolate was known not only as a beverage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-instagram"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-twitter"></i></a></span>
+            <p>All Copywrite reserved 2019</p>
+        </div>
+        <div class="scroll-btn">
+            <a href="#body-content"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $( ".nav-btn" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideUp();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".close" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideDown();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".history-item" ).click(function(e) {
+                e.preventDefault();
+                    $(".subnav").not(".subnav").slideDown();
+                    $( ".subnav" ).slideToggle( "slow", function() {
+                });
+             });
+         });
+    </script>
+</body>
+</html>

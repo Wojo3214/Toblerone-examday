@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="History doesn't have to be boring. Back to the past and check our company's one.">
+    <meta name="robots" content="noindex" />
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../mystyle.css">
+
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+
+    <title>History of company</title>
+</head>
+<body id="body-content">
+    <header class="top-sub">
+        <div class="top-all top-all-big">
+            <div class="logo-container logo-con-sm">
+                <a href="../index.html"><img src="../img/logo.png" alt="Toblerone logo"></a>
+            </div>
+            <nav class="nav-big-size nav-small-size">
+                <div class="nav-btn nav-btn-target">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ol class="nav-content">
+                    <li class="close"><span>&times;</span></li>
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
+                    <li><a href="products.html" class="nav-item">Our Products</a></li>
+                    <li><a href="#" class="nav-item history-item">History</a>           <ul class="subnav">
+                            <li><a href="history.html" class="nav-item ">of chocolate</a></li>
+                            <li><a href="#" class="nav-item">of company</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="recipes.html" class="nav-item">Recipes</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="history">
+                <header>
+                    <h2>History of company</h2>
+                </header>
+                <div class="history-container">
+                    <div class="time_line">
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>Bern, 1908</h3>
+                                <p>Toblerone was created in 1908 by the Swiss chocolate maker Theodor Tobler (1876-1941) at his confectionery in Bern. His cousin, Emil Baumann, gave him the idea of ​​mixing chocolate with almond and honey nougat after tasting the nougat on a trip to Italy.2 Instead of creating a traditional chocolate tablet, Tobler designed a prism-shaped mold triangular, from which small portions could be removed to be consumed</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-left">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>Bern, 1909</h3>
+                                <p>Theodor Tobler filed a patent for the preparation of Toblerone in 1909 in Bern. In the same year the "Toblerone" brand was also officially registered.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>1970</h3>
+                                <p>In 1970, the company was merged with the then owner of Milka, the company Suchard, while creating the Interfood group.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-left">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>1982</h3>
+                                <p>In 1982, it merged once again, this time with the coffee producer Jacobs, creating Jacobs Suchard.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>1990</h3>
+                                <p>Mondelēz International (then Kraft Foods) took over the majority of Jacobs Suchard in 1990 along with Toblerone</p>
+                            </div>
+                        </div>
+                        <div class="timeline-block timeline-block-left">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <h3>2012</h3>
+                                <p>Since 2012, the European subsidiary of Kraft is called Mondelēz International.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-instagram"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-twitter"></i></a></span>
+            <p>All Copywrite reserved 2019</p>
+        </div>
+        <div class="scroll-btn">
+            <a href="#body-content"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $( ".nav-btn" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideUp();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".close" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideDown();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".history-item" ).click(function(e) {
+                e.preventDefault();
+                    $(".subnav").not(".subnav").slideDown();
+                    $( ".subnav" ).slideToggle( "slow", function() {
+                });
+             });
+         });
+    </script>
+</body>
+</html>
