@@ -267,6 +267,7 @@ main{
     left: 50%;
     transform: translate(-50%, -15%);
     transition: .3s;
+    z-index: 88;
 }
 
 .top-check:hover{
