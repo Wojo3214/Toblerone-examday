@@ -669,6 +669,10 @@ footer{
     height: 100%;
 }
 
+.history-company{
+    background-image: url(img/cacao.jpg);
+}
+
 .history header h2{
     color: #E7C34F;
     padding-top: 15px;
